@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Types of Websites</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background-color: #111827;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #d1d5db;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .note {
+            background-color: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .important {
+            background-color: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .key {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #111827;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Types of Websites</h1>
+        <p>Understanding the different types of websites and how they work</p>
+    </header>
+
+    <main>
+
+        <!-- INTRODUCTION -->
+        <section>
+
+            <h2>Introduction</h2>
+
+            <p>
+                There are different ways to classify websites depending on
+                how they work, how they are managed, and what they are used for.
+            </p>
+
+            <div class="important">
+                <strong>Important:</strong>
+                Static and dynamic describe <strong>how a website works</strong>,
+                while CMS and e-commerce describe <strong>how a website is
+                managed or what it is used for</strong>.
+            </div>
+
+            <p>
+                This means that these categories can overlap.
+                For example, an e-commerce website can also be a dynamic website
+                and can be built using a CMS.
+            </p>
+
+        </section>
+
+
+        <!-- STATIC WEBSITE -->
+        <section>
+
+            <h2>1. Static Websites</h2>
+
+            <p>
+                A static website displays mostly fixed content.
+                The content is usually written directly into the website's
+                HTML files.
+            </p>
+
+            <p>
+                Static websites are commonly built using
+                <strong>HTML and CSS</strong>, with JavaScript added when
+                interactive features are needed.
+            </p>
+
+            <h3>Examples</h3>
+
+            <ul>
+                <li>Personal portfolio website</li>
+                <li>Business landing page</li>
+                <li>Restaurant information website</li>
+                <li>School information website</li>
+            </ul>
+
+            <h3>Key Characteristic</h3>
+
+            <p>
+                The content does not normally change automatically based on
+                users or information stored in a database.
+            </p>
+
+            <div class="note">
+                <strong>Think of it this way:</strong>
+                <br>
+                A static website is like a printed brochure on the internet.
+                The information stays mostly the same until a developer changes
+                the files.
+            </div>
+
+        </section>
+
+
+        <!-- DYNAMIC WEBSITE -->
+        <section>
+
+            <h2>2. Dynamic Websites</h2>
+
+            <p>
+                A dynamic website can generate or change content based on
+                user actions, databases, authentication, APIs, or other
+                server-side processes.
+            </p>
+
+            <p>
+                Unlike a basic static website, a dynamic website can respond
+                differently depending on the user or the information available
+                in a database.
+            </p>
+
+            <h3>Technologies Commonly Used</h3>
+
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+            </ul>
+
+            <h3>Examples</h3>
+
+            <ul>
+                <li>Social media platforms</li>
+                <li>Job portals</li>
+                <li>Online banking platforms</li>
+                <li>Student portals</li>
+                <li>Job application trackers</li>
+            </ul>
+
+            <h3>Key Characteristic</h3>
+
+            <p>
+                Content and functionality can change dynamically based on
+                users, data, or other conditions.
+            </p>
+
+            <div class="note">
+                <strong>Example:</strong>
+                <br>
+                When you log into a student portal, you see your own courses,
+                results, profile, and other information. Another student may
+                see completely different information.
+            </div>
+
+        </section>
+
+
+        <!-- CMS WEBSITE -->
+        <section>
+
+            <h2>3. CMS Websites</h2>
+
+            <p>
+                <strong>CMS</strong> means
+                <strong>Content Management System</strong>.
+            </p>
+
+            <p>
+                A CMS allows users to create, edit, organize, and publish
+                website content without necessarily writing code for every
+                change.
+            </p>
+
+            <h3>Examples of CMS Platforms</h3>
+
+            <ul>
+                <li>WordPress</li>
+                <li>Joomla</li>
+                <li>Drupal</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <p>
+                Imagine a company has a blog with hundreds of articles.
+                Instead of asking a developer to manually edit the HTML every
+                time a new article needs to be published, an employee can log
+                into the CMS dashboard and create a new post.
+            </p>
+
+            <h3>Key Characteristic</h3>
+
+            <p>
+                Website content is managed through an administrative interface,
+                often called a dashboard.
+            </p>
+
+            <div class="note">
+                <strong>Think of it this way:</strong>
+                <br>
+                A CMS gives non-developers a way to manage website content
+                without needing to edit the website's source code every time.
+            </div>
+
+        </section>
+
+
+        <!-- E-COMMERCE WEBSITE -->
+        <section>
+
+            <h2>4. E-commerce Websites</h2>
+
+            <p>
+                An e-commerce website is a website designed to allow people
+                or businesses to buy and sell products or services online.
+            </p>
+
+            <h3>Common Features</h3>
+
+            <ul>
+                <li>Product listings</li>
+                <li>Product search and filtering</li>
+                <li>Shopping cart</li>
+                <li>Checkout</li>
+                <li>Payment integration</li>
+                <li>Customer accounts</li>
+                <li>Order management</li>
+                <li>Inventory management</li>
+            </ul>
+
+            <h3>Examples</h3>
+
+            <ul>
+                <li>Amazon</li>
+                <li>Jumia</li>
+                <li>Online fashion stores</li>
+                <li>Online electronics stores</li>
+                <li>Shopify stores</li>
+            </ul>
+
+            <h3>Key Characteristic</h3>
+
+            <p>
+                An e-commerce website supports online commercial transactions.
+            </p>
+
+            <div class="note">
+                <strong>Example:</strong>
+                <br>
+                A customer can browse products, add a product to a shopping
+                cart, enter their details, make a payment, and receive an
+                order confirmation.
+            </div>
+
+        </section>
+
+
+        <!-- COMPARISON -->
+        <section>
+
+            <h2>Comparing the Four Types</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Main Idea</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>Static</strong></td>
+                        <td>Mostly fixed information</td>
+                        <td>Portfolio website</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Dynamic</strong></td>
+                        <td>
+                            Content or functionality changes based on
+                            users or data
+                        </td>
+                        <td>Job portal</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>CMS</strong></td>
+                        <td>
+                            Content is managed through a content
+                            management system
+                        </td>
+                        <td>WordPress blog</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>E-commerce</strong></td>
+                        <td>
+                            Designed for buying and selling products
+                            or services
+                        </td>
+                        <td>Online store</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- IMPORTANT CONCEPT -->
+        <section>
+
+            <h2>Can a Website Belong to More Than One Category?</h2>
+
+            <p>
+                Yes!
+            </p>
+
+            <p>
+                These categories are not completely separate from one another.
+                A single website can fit into more than one category.
+            </p>
+
+            <div class="important">
+
+                <p>
+                    <strong>Example:</strong>
+                    A WordPress online store can be:
+                </p>
+
+                <ul>
+                    <li>A <strong>CMS website</strong> because it uses WordPress.</li>
+                    <li>An <strong>e-commerce website</strong> because it sells products.</li>
+                    <li>A <strong>dynamic website</strong> because products, users, orders, and other data can change.</li>
+                </ul>
+
+            </div>
+
+            <p>
+                So, when identifying a website, ask two questions:
+            </p>
+
+            <ol>
+                <li>
+                    <strong>How does the website work?</strong>
+                    <br>
+                    Is it static or dynamic?
+                </li>
+
+                <li>
+                    <strong>What is the website used for or how is it managed?</strong>
+                    <br>
+                    Is it a CMS, e-commerce website, blog, portfolio,
+                    educational platform, etc.?
+                </li>
+            </ol>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Web Development Class &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

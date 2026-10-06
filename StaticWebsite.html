@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technologies</title>
+
+    <style>
+
+        /* 
+           GENERAL STYLES
+    */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f4f6f8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /*
+           HEADER*/
+
+        header {
+            background-color: #111827;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+
+        /* 
+           HERO SECTION*/
+
+        .hero {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+
+        /* 
+           GENERAL SECTION
+        = */
+
+        section {
+            padding: 70px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .section-intro {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+
+        /* 
+           TECHNOLOGY CARDS
+        = */
+
+        .technology-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .technology-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .technology-card h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .technology-card p {
+            margin-bottom: 15px;
+        }
+
+        .technology-card ul {
+            margin-left: 20px;
+        }
+
+
+        /* 
+           FRONTEND SECTION
+        = */
+
+        .frontend {
+            background-color: white;
+        }
+
+
+        /* 
+           BACKEND SECTION
+        = */
+
+        .backend {
+            background-color: #eef2ff;
+        }
+
+
+        /* 
+           COMPARISON TABLE
+        = */
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #111827;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+
+        /* 
+           FULL STACK SECTION
+        = */
+
+        .full-stack {
+            background-color: white;
+            text-align: center;
+        }
+
+        .full-stack-box {
+            max-width: 750px;
+            margin: auto;
+            background-color: #eff6ff;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+
+        /* 
+           FOOTER
+        = */
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+
+        /* 
+           RESPONSIVE DESIGN
+        = */
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .technology-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!--  HEADER / NAVIGATION-->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    WebTech
+                </div>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#frontend">Frontend</a>
+                    </li>
+
+                    <li>
+                        <a href="#backend">Backend</a>
+                    </li>
+
+                    <li>
+                        <a href="#comparison">Comparison</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- 
+         MAIN CONTENT
+    = -->
+
+    <main>
+
+
+        <!-- 
+             HERO
+        = -->
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <h1>
+                    Frontend & Backend Technologies
+                </h1>
+
+                <p>
+                    Learn about the technologies used to build
+                    modern websites and web applications.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 
+             INTRODUCTION
+        = -->
+
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    What Are Web Technologies?
+                </h2>
+
+                <p class="section-intro">
+
+                    Web technologies are tools, programming languages,
+                    frameworks, and systems used to create websites
+                    and web applications.
+
+                    They can generally be divided into two major areas:
+                    <strong>Frontend</strong> and <strong>Backend</strong>.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 
+             FRONTEND
+         -->
+
+        <section class="frontend" id="frontend">
+
+            <div class="container">
+
+                <h2>
+                    Frontend Technologies
+                </h2>
+
+                <p class="section-intro">
+
+                    Frontend development focuses on the part of a website
+                    that users see and interact with directly.
+
+                </p>
+
+
+                <div class="technology-container">
+
+
+                    <!-- HTML -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            HTML stands for HyperText Markup Language.
+                            It is used to create the structure and
+                            content of a webpage.
+                        </p>
+
+                        <ul>
+
+                            <li>Headings</li>
+                            <li>Paragraphs</li>
+                            <li>Links</li>
+                            <li>Images</li>
+                            <li>Forms</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- CSS -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            CSS stands for Cascading Style Sheets.
+                            It is used to style and design HTML elements.
+                        </p>
+
+                        <ul>
+
+                            <li>Colors</li>
+                            <li>Fonts</li>
+                            <li>Layouts</li>
+                            <li>Spacing</li>
+                            <li>Responsive design</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- JavaScript -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            JavaScript is a programming language used
+                            to add interactivity and dynamic behavior
+                            to webpages.
+                        </p>
+
+                        <ul>
+
+                            <li>Events</li>
+                            <li>Animations</li>
+                            <li>Form validation</li>
+                            <li>DOM manipulation</li>
+                            <li>API interaction</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- React -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            React
+                        </h3>
+
+                        <p>
+                            React is a JavaScript library used to build
+                            interactive user interfaces and web applications.
+                        </p>
+
+                        <ul>
+
+                            <li>Components</li>
+                            <li>Reusable UI</li>
+                            <li>State management</li>
+                            <li>Single Page Applications</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Bootstrap -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Bootstrap
+                        </h3>
+
+                        <p>
+                            Bootstrap is a CSS framework that provides
+                            ready-made styles and components for building
+                            responsive websites.
+                        </p>
+
+                        <ul>
+
+                            <li>Buttons</li>
+                            <li>Cards</li>
+                            <li>Navigation bars</li>
+                            <li>Responsive grids</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Tailwind -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Tailwind CSS
+                        </h3>
+
+                        <p>
+                            Tailwind CSS is a utility-first CSS framework
+                            used to build custom user interfaces quickly.
+                        </p>
+
+                        <ul>
+
+                            <li>Utility classes</li>
+                            <li>Responsive design</li>
+                            <li>Custom layouts</li>
+                            <li>Modern UI development</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 
+             BACKEND
+        = -->
+
+        <section class="backend" id="backend">
+
+            <div class="container">
+
+                <h2>
+                    Backend Technologies
+                </h2>
+
+                <p class="section-intro">
+
+                    Backend development focuses on the server-side
+                    of a web application. It handles data, business
+                    logic, authentication, APIs, and communication
+                    with databases.
+
+                </p>
+
+
+                <div class="technology-container">
+
+
+                    <!-- Node.js -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Node.js
+                        </h3>
+
+                        <p>
+                            Node.js allows developers to run JavaScript
+                            outside the browser and is commonly used
+                            to build backend applications and APIs.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Express -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Express.js
+                        </h3>
+
+                        <p>
+                            Express.js is a Node.js framework used to
+                            build web servers and APIs.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Python -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            Python
+                        </h3>
+
+                        <p>
+                            Python is a general-purpose programming
+                            language that can be used for backend
+                            web development.
+                        </p>
+
+                    </div>
+
+
+                    <!-- PHP -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            PHP
+                        </h3>
+
+                        <p>
+                            PHP is a server-side scripting language
+                            commonly used to build dynamic websites
+                            and web applications.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MongoDB -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            MongoDB
+                        </h3>
+
+                        <p>
+                            MongoDB is a NoSQL database used to store
+                            and manage application data.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MySQL -->
+
+                    <div class="technology-card">
+
+                        <h3>
+                            MySQL
+                        </h3>
+
+                        <p>
+                            MySQL is a relational database management
+                            system used to store structured data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 
+             FRONTEND VS BACKEND
+        -->
+
+        <section id="comparison">
+
+            <div class="container">
+
+                <h2>
+                    Frontend vs Backend
+                </h2>
+
+                <p class="section-intro">
+
+                    Frontend and backend development work together
+                    to create complete web applications.
+
+                </p>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead> <!-- (Table Head Section) -->
+
+                            <tr> 
+
+                                <th> <!-- (Table Header Cell) -->
+                                    Frontend
+                                </th>
+
+                                <th> <!-- (Second Table Header Cell) -->
+                                    Backend
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr> <!-- (First Table Data Row) -->
+
+                                <td> <!-- (First Table Data Cell) -->
+                                    What the user sees
+                                </td>
+
+                                <td> <!-- (Second Table Data Cell) -->
+                                    Runs behind the scenes
+                                </td>
+
+                            </tr>
+
+
+                            <tr> <!-- (Second Table Data Row) -->
+
+                                <td> <!-- (Third Table Data Cell) -->
+                                    Handles user interface
+                                </td>
+
+                                <td> <!-- (Fourth Table Data Cell) -->
+                                    Handles business logic
+                                </td>
+
+                            </tr>
+
+
+                            <tr> <!-- (Third Table Data Row) -->
+
+                                <td> <!-- (Fifth Table Data Cell) -->
+                                    HTML, CSS, JavaScript
+                                </td>
+
+                                <td> <!-- (Sixth Table Data Cell) -->
+                                    Node.js, PHP, Python
+                                </td>
+
+                            </tr>
+
+
+                            <tr> <!-- (Fourth Table Data Row) -->
+
+                                <td> <!-- (Seventh Table Data Cell) -->
+                                    Creates interactive interfaces
+                                </td>
+
+                                <td> <!-- (Eighth Table Data Cell) -->
+                                    Handles server requests
+                                </td>
+
+                            </tr>
+
+
+                            <tr> <!-- (Fifth Table Data Row) -->
+
+                                <td> <!-- (Ninth Table Data Cell) -->
+                                    Communicates with APIs
+                                </td>
+
+                                <td> <!-- (Tenth Table Data Cell) -->
+                                    Creates and manages APIs
+                                </td>
+
+                            </tr>
+
+
+                            <tr> <!-- (Sixth Table Data Row) -->
+
+                                <td> <!-- (Eleventh Table Data Cell) -->
+                                    Runs mainly in the browser
+                                </td>
+
+                                <td> <!-- (Twelfth Table Data Cell) -->
+                                    Runs mainly on the server
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 
+             FULL STACK
+        = -->
+
+        <section class="full-stack">
+
+            <div class="container">
+
+                <h2>
+                    What is Full-Stack Development?
+                </h2>
+
+                <div class="full-stack-box">
+
+                    <p>
+
+                        Full-stack development involves working with
+                        both the frontend and backend parts of a web
+                        application.
+
+                    </p>
+
+                    <br>
+
+                    <p>
+
+                        A full-stack developer may work with technologies
+                        such as HTML, CSS, JavaScript, React, Node.js,
+                        Express.js, and databases such as MongoDB or MySQL.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- 
+         FOOTER
+    = -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 WebTech | Introduction to Web Technologies
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
